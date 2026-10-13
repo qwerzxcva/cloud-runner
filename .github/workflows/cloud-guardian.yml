@@ -1,7 +1,7 @@
 name: cloud-guardian
 on:
   schedule:
-    - cron: "40 7 * * 1-5"   # 15:40 CST 交易日
+    - cron: "40 7 * * 1-5"
   workflow_dispatch:
 permissions:
   contents: write
@@ -12,11 +12,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Clone GitCode stock-system
         run: git clone --depth 1 https://gitcode.com/dufuwuxin/stock-system.git work
-      - name: Run cloud_daily (快照+B规则+GitCode AI)
+      - name: Run engines (daily + full B-rule)
         working-directory: work
         env:
           GITCODE_TOKEN: ${{ secrets.GITCODE_TOKEN }}
-        run: python3 engines/cloud_daily.py
+        run: |
+          pip install -q pyarrow 2>/dev/null || true
+          python3 engines/cloud_daily.py
+          python3 engines/cloud_engine_full.py
       - name: Commit results back to GitCode
         working-directory: work
         run: |
