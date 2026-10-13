@@ -1,0 +1,36 @@
+name: cloud-guardian
+on:
+  schedule:
+    - cron: "40 7 * * 1-5"   # 15:40 CST 交易日
+    - cron: "0 8 * * 1-5"    # 16:00 CST 复盘
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone GitCode stock-system
+        run: git clone --depth 1 https://gitcode.com/dufuwuxin/stock-system.git work
+      - name: Run cloud_daily (快照+B规则+GitCode AI)
+        working-directory: work
+        env:
+          GITCODE_TOKEN: ${{ secrets.GITCODE_TOKEN }}
+        run: |
+          python3 engines/cloud_daily.py
+      - name: Commit results back to GitCode
+        working-directory: work
+        run: |
+          git config user.name "cloud-guardian"
+          git config user.email "bot@users.noreply.github.com"
+          git add cloud/
+          git commit -m "cloud run $(TZ=Asia/Shanghai date +%F-%H:%M) (GitHub Actions)" || echo "no changes"
+          git push https://${{ secrets.GITCODE_TOKEN }}@gitcode.com/dufuwuxin/stock-system.git main || echo "push failed"
+      - name: Mirror result to this repo
+        run: |
+          mkdir -p cloud && cp -r work/cloud/* cloud/ 2>/dev/null || true
+          git config user.name "cloud-guardian"
+          git config user.email "bot@users.noreply.github.com"
+          git add cloud/
+          git commit -m "cloud snapshot $(TZ=Asia/Shanghai date +%F-%H:%M)" || echo "no changes"
+          git push || true
