@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Clone GitCode stock-system
-        run: git clone --depth 1 https://gitcode.com/dufuwuxin/stock-system.git work
+      - name: Clone private engine-core
+        run: git clone --depth 1 https://dufuwuxin:${{ secrets.GITCODE_TOKEN }}@gitcode.com/dufuwuxin/engine-core.git work
       - name: Run engines (daily + full B-rule)
         working-directory: work
         env:
@@ -20,15 +20,15 @@ jobs:
           pip install -q pyarrow 2>/dev/null || true
           python3 engines/cloud_daily.py
           python3 engines/cloud_engine_full.py
-      - name: Commit results back to GitCode
+      - name: Commit results back to engine-core
         working-directory: work
         run: |
           git config user.name "cloud-guardian"
           git config user.email "bot@users.noreply.github.com"
           git add cloud/
-          git commit -m "cloud run $(TZ=Asia/Shanghai date +%F-%H:%M) (GitHub Actions)" || echo "no changes"
-          git -c credential.helper='!f() { echo username=dufuwuxin; echo password=${{ secrets.GITCODE_TOKEN }}; }; f' push origin main || echo "push failed"
-      - name: Mirror result to this repo
+          git commit -m "cloud run $(TZ=Asia/Shanghai date +%F-%H:%M)" || echo "no changes"
+          git push origin main || echo "push failed"
+      - name: Mirror to this repo (public snapshot)
         run: |
           mkdir -p cloud && cp -r work/cloud/* cloud/ 2>/dev/null || true
           git config user.name "cloud-guardian"
