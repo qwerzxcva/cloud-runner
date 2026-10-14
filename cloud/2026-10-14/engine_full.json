@@ -1,0 +1,16 @@
+{
+ "date": "2026-10-14",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 1,
+ "candidates": [
+  {
+   "code": "603360",
+   "name": "百傲化学",
+   "price": 12.37,
+   "pct": 2.57,
+   "vlb": 1.66,
+   "pos240": 0.31,
+   "days": 670
+  }
+ ]
+}
