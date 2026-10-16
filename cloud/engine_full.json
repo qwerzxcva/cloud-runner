@@ -1,15 +1,24 @@
 {
- "date": "2026-10-14",
+ "date": "2026-10-16",
  "engine": "B-rule full(240d window)",
- "n_candidates": 1,
+ "n_candidates": 2,
  "candidates": [
   {
-   "code": "603360",
-   "name": "百傲化学",
-   "price": 12.37,
-   "pct": 2.57,
-   "vlb": 1.66,
-   "pos240": 0.31,
+   "code": "605598",
+   "name": "上海港湾",
+   "price": 22.43,
+   "pct": 3.17,
+   "vlb": 1.38,
+   "pos240": 0.301,
+   "days": 670
+  },
+  {
+   "code": "603040",
+   "name": "新坐标",
+   "price": 36.91,
+   "pct": 1.91,
+   "vlb": 0.87,
+   "pos240": 0.312,
    "days": 670
   }
  ]
