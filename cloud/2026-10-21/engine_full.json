@@ -1,0 +1,16 @@
+{
+ "date": "2026-10-21",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 1,
+ "candidates": [
+  {
+   "code": "603256",
+   "name": "宏和科技",
+   "price": 102.86,
+   "pct": 3.87,
+   "vlb": 1.36,
+   "pos240": 0.326,
+   "days": 672
+  }
+ ]
+}
