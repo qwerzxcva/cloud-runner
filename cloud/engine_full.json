@@ -1,6 +1,16 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-26",
  "engine": "B-rule full(240d window)",
- "n_candidates": 0,
- "candidates": []
+ "n_candidates": 1,
+ "candidates": [
+  {
+   "code": "600418",
+   "name": "江淮汽车",
+   "price": 20.17,
+   "pct": 2.39,
+   "vlb": 0.98,
+   "pos240": 0.333,
+   "days": 645
+  }
+ ]
 }
