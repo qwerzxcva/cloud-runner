@@ -1,0 +1,25 @@
+{
+ "date": "2026-10-27",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 2,
+ "candidates": [
+  {
+   "code": "603686",
+   "name": "福龙马",
+   "price": 12.1,
+   "pct": 0.75,
+   "vlb": 1.2,
+   "pos240": 0.326,
+   "days": 673
+  },
+  {
+   "code": "603179",
+   "name": "新泉股份",
+   "price": 40.4,
+   "pct": 2.64,
+   "vlb": 0.9,
+   "pos240": 0.336,
+   "days": 673
+  }
+ ]
+}
