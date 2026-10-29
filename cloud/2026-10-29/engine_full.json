@@ -1,0 +1,16 @@
+{
+ "date": "2026-10-29",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 1,
+ "candidates": [
+  {
+   "code": "603601",
+   "name": "再升科技",
+   "price": 7.89,
+   "pct": 2.33,
+   "vlb": 1.73,
+   "pos240": 0.333,
+   "days": 673
+  }
+ ]
+}
