@@ -1,15 +1,24 @@
 {
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "engine": "B-rule full(240d window)",
- "n_candidates": 1,
+ "n_candidates": 2,
  "candidates": [
   {
-   "code": "603601",
-   "name": "再升科技",
-   "price": 7.89,
-   "pct": 2.33,
-   "vlb": 1.73,
-   "pos240": 0.333,
+   "code": "605255",
+   "name": "天普股份",
+   "price": 48.62,
+   "pct": 1.25,
+   "vlb": 1.51,
+   "pos240": 0.233,
+   "days": 640
+  },
+  {
+   "code": "603538",
+   "name": "美诺华",
+   "price": 20.9,
+   "pct": 3.06,
+   "vlb": 1.91,
+   "pos240": 0.301,
    "days": 673
   }
  ]
