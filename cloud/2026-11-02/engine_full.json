@@ -1,0 +1,34 @@
+{
+ "date": "2026-11-02",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 3,
+ "candidates": [
+  {
+   "code": "601127",
+   "name": "赛力斯",
+   "price": 42.68,
+   "pct": 4.99,
+   "vlb": 1.82,
+   "pos240": 0.258,
+   "days": 674
+  },
+  {
+   "code": "600105",
+   "name": "永鼎股份",
+   "price": 22.66,
+   "pct": 4.18,
+   "vlb": 1.19,
+   "pos240": 0.306,
+   "days": 674
+  },
+  {
+   "code": "603686",
+   "name": "福龙马",
+   "price": 12.06,
+   "pct": 3.97,
+   "vlb": 1.04,
+   "pos240": 0.329,
+   "days": 674
+  }
+ ]
+}
