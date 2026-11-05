@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-05",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 1,
+ "candidates": [
+  {
+   "code": "600773",
+   "name": "西藏城投",
+   "price": 9.0,
+   "pct": 4.29,
+   "vlb": 1.38,
+   "pos240": 0.299,
+   "days": 676
+  }
+ ]
+}
