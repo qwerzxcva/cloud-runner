@@ -1,15 +1,24 @@
 {
- "date": "2026-11-05",
+ "date": "2026-11-06",
  "engine": "B-rule full(240d window)",
- "n_candidates": 1,
+ "n_candidates": 2,
  "candidates": [
   {
-   "code": "600773",
-   "name": "西藏城投",
-   "price": 9.0,
-   "pct": 4.29,
-   "vlb": 1.38,
-   "pos240": 0.299,
+   "code": "603538",
+   "name": "美诺华",
+   "price": 21.65,
+   "pct": 0.65,
+   "vlb": 1.21,
+   "pos240": 0.296,
+   "days": 676
+  },
+  {
+   "code": "002865",
+   "name": "钧达股份",
+   "price": 44.59,
+   "pct": 2.11,
+   "vlb": 1.41,
+   "pos240": 0.34,
    "days": 676
   }
  ]
