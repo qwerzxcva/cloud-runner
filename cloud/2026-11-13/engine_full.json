@@ -1,0 +1,25 @@
+{
+ "date": "2026-11-13",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 2,
+ "candidates": [
+  {
+   "code": "601615",
+   "name": "明阳智能",
+   "price": 7.92,
+   "pct": 0.51,
+   "vlb": 1.56,
+   "pos240": 0.31,
+   "days": 668
+  },
+  {
+   "code": "600418",
+   "name": "江淮汽车",
+   "price": 19.31,
+   "pct": 1.42,
+   "vlb": 1.26,
+   "pos240": 0.317,
+   "days": 648
+  }
+ ]
+}
