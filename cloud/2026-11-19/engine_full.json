@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-19",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 1,
+ "candidates": [
+  {
+   "code": "603663",
+   "name": "三祥新材",
+   "price": 27.61,
+   "pct": 3.1,
+   "vlb": 1.02,
+   "pos240": 0.286,
+   "days": 676
+  }
+ ]
+}
