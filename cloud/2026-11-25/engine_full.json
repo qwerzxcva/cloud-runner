@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-25",
+ "engine": "B-rule full(240d window)",
+ "n_candidates": 1,
+ "candidates": [
+  {
+   "code": "600410",
+   "name": "华胜天成",
+   "price": 17.92,
+   "pct": 4.37,
+   "vlb": 1.13,
+   "pos240": 0.339,
+   "days": 648
+  }
+ ]
+}
